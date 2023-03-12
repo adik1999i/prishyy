@@ -17,10 +17,10 @@
     <body>
         <div id="main">
           
-             <audio autoplay="autoplay" height="100" width="100"> 
+<!--              <audio autoplay="autoplay" height="100" width="100"> 
                     <source src="prish.mp3" type="audio/mp3" /> 
                     <embed height="100" width="100" src="prish.mp3" /> 
-            </audio> 
+            </audio>  -->
             <div id="wrap">
                 <div id="text">
                     <div id="code"> <font color="#FF0000"> <span class="say">HEY PRISH  </span><br>
@@ -57,6 +57,8 @@
 
     <script>
     (function(){
+	      var audio = new Audio("prish.mp3");
+        audio.play();
         var canvas = $('#canvas');
 		
         if (!canvas[0].getContext) {
